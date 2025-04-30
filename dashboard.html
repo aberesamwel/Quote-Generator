@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Select your mood to generate a quote.</p>
+        
+        <div class="flex-container">
+            <div>
+            <button onclick="generateQuote('happy')">Happy</button>
+        </div>
+        <div>
+            <button onclick="generateQuote('sad')">Sad</button>
+        </div>
+        <div>
+            <button onclick="generateQuote('motivational')">Motivational</button>
+        </div>
+        <div>
+            <button onclick="generateQuote('inspirational')">Inspirational</button>
+        </div>
+        </div>
+
+        <div id="quote-container">
+            <p id="quote">Your personalized quote will appear here...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website</p>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+ .background{
+    background-image: url(../assets/images/images/istockphoto-1385090168-1024x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 340px;
+    justify-content: center;
+}  
+/* General reset */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: tomato;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+
+}
+h1 {
+    font-style: italic;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#quote-container {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #34495e;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form input {
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #2ecc71;
+    border: none;
+}
+
+form button:hover {
+    background-color: #27ae60;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    width: 550px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+  }
