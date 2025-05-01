@@ -7,7 +7,20 @@ Features
  Mood-Based Quotes:  The core functionality is the generation of quotes based on four moods: happy, sad, motivational, and inspirational.  A JavaScript function (generateQuote) randomly selects a quote from a pre-defined array for the chosen mood.
  Intuitive Interface: The website uses a clean and simple design, making it easy for users to navigate and select their desired mood.  The dashboard presents the quote selection in a visually appealing manner using flexbox.
  Multiple Pages:  The website includes a home page, a login page (currently functional but without backend authentication), and a dashboard page displaying the quote.  Navigation between these pages is implemented using standard HTML links.
+ 
+#Setup/Insatallation Requirements
 
+.To access the website,follow these simple steps
+
+1.Ensure you have an internet browser installed (e.g.Google Chrome)
+
+2.open your browser
+
+3.Enter the following URL in the address bar
+
+   https://github.com/aberesamwel/Quote-Generator
+
+4.Hit Enter and enjoy the site!
 Files
 
  index.html (Home Page): The main landing page, welcoming users to the quote generator.  The main content is currently commented out, but it's designed to mirror the functionality of the dashboard page.
@@ -16,7 +29,7 @@ Files
  styles.css (Stylesheet): Contains all the CSS styling for the website.  Includes styles for the header, navigation, main content area, footer, buttons, and quote display.
  src/script.js (JavaScript): Contains the JavaScript code for generating quotes based on the selected mood.  Includes the quotes object containing the quote arrays for each mood.
 
-Technology Stack
+#Technology Stack
 
  HTML:  Used for structuring the website content.
  CSS:  Used for styling the website.
