@@ -18,7 +18,7 @@ Features
 
 3.Enter the following URL in the address bar
 
-   https://github.com/aberesamwel/Quote-Generator
+   https://aberesamwel.github.io/Quote-Generator/
 
 4.Hit Enter and enjoy the site!
 Files
