@@ -1,5 +1,5 @@
-// Array of quotes for each mood
-const quotes = {
+// Array of quotes for each mood (This could be loaded from localStorage instead)
+let quotes = {
     happy: [
         "Happiness is not something ready made. It comes from your own actions. – Dalai Lama",
         "For every minute you are angry, you lose sixty seconds of happiness. – Ralph Waldo Emerson",
@@ -21,12 +21,27 @@ const quotes = {
         "What lies behind us and what lies before us are tiny matters compared to what lies within us. – Ralph Waldo Emerson"
     ]
 };
+
+// Checking if quotes are already in local storage
+const storedQuotes = localStorage.getItem('quotes');
+if (storedQuotes) {
+    quotes = JSON.parse(storedQuotes);
+} else {
+    // Save the quotes to local storage
+    localStorage.setItem('quotes', JSON.stringify(quotes));
+}
+
+
 document.getElementById("demo").innerHTML = 
 "The full URL of this page is:<br>" + window.location.href;
 
 // Function to generate a quote based on mood
 function generateQuote(mood) {
     const quoteArray = quotes[mood];
+    if (!quoteArray || quoteArray.length === 0) {
+        document.getElementById('quote').textContent = "No quotes found for this mood.";
+        return;
+    }
     const randomIndex = Math.floor(Math.random() * quoteArray.length);
     document.getElementById('quote').textContent = quoteArray[randomIndex];
 }
